@@ -1,5 +1,6 @@
 module "vpc" {
   source              = ".//vpc_module"
+  vpc_cidr_range      = var.vpc_cidr_range
   public_subnet_cidr  = var.public_subnet_cidr
   private_subnet_cidr = var.private_subnet_cidr
   allowallcidr        = var.allowallcidr
